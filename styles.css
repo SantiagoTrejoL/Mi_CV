@@ -1,0 +1,154 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F5F5F5  ;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #E1E1E1   ;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Columna para la foto */
+  .left-column {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .left-column img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  /* Columna para la información */
+  .right-column {
+    flex: 3;
+  }
+  
+  /* Títulos principales */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  /* Secciones del CV */
+  .section-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Estilos generales para cada sección */
+  .profile, .experience, .courses, .skills, .tools, .social {
+    margin-top: 30px;
+  }
+  
+  /* Estilo para los elementos de cada sección */
+  .job, .course, .tool, .social ul, .profile-item, .experience-item, .competency-item {
+    background-color: #D3D3D3;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job h3, .course dt, .tool li, .experience-title, .competency-title {
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .job h4, .course dd, .tool li, .experience-role, .competency-list li {
+    font-weight: normal;
+    color: #555;
+  }
+  
+  .job-duration, .course-duration, .experience-role, .competency-list {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .job-description, .tool-description, .experience-description, .course-description, .profile-item p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Listas */
+  ul, dl {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  footer a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer img {
+    width: 60px;
+    margin: 10px;
+  }
+  
+  /* Contenedor flexible para listas (cursos, experiencias, habilidades) */
+  .course-list, .experience-list, .skills-competencies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Estilo de los elementos dentro de las listas */
+  .course, .experience-item, .competency-item {
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .course h3, .experience-title {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  
+  /* Responsividad para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .course, .experience-item, .competency-item, .profile-item {
+      width: 100%; /* Los elementos ocupan el 100% del ancho en pantallas pequeñas */
+    }
+  }
+  
+  /* Responsividad para pantallas medianas */
+  @media (min-width: 768px) {
+    .course, .experience-item, .competency-item, .profile-item {
+      width: 48%; /* Dos elementos por fila en pantallas medianas */
+    }
+  }
+  
+  /* Responsividad para pantallas grandes */
+  @media (min-width: 1024px) {
+    .course, .experience-item, .competency-item, .profile-item {
+      width: 30%; /* Tres elementos por fila en pantallas grandes */
+    }
+  }
+  
+  .profile-item p i {
+    margin-right: 8px;
+  }
